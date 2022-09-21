@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pharmacy</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>pharmacy</h2>
+        <p>medication schedule</p>
+        </div>
+        <div class="input">
+<input type="text" placeholder="tittle" id="tittle">
+<div class="price">
+    <input onkeyup="gettotal()" type="number" placeholder="price" id="price">
+    <input onkeyup="gettotal()" type="number" placeholder="taxes" id="taxes">
+    <input onkeyup="gettotal()" type="number" placeholder="Added value" id="Added">
+    <input onkeyup="gettotal()" type="number" placeholder="deccound" id="dec">
+    <input onkeyup="gettotal()" type="search" placeholder="category" id="date">
+    <small id="total"> </small>
+</div>
+<input type="number" placeholder="count" id="count">
+<input type="text" placeholder="date" id="category">
+   <button id="submit">creat</button>
+        </div>
+        <div class="output">
+
+<input onkeyup="searchData(this.value)" type="text " id="search" placeholder="search">
+<div class="cat">
+    <button onclick="getSearchMood(this.id)" id="search by tittle">search by tittle</button>
+    <button onclick="getSearchMood(this.id)" id="search by category ">search by date</button>
+    <!-- <button onclick="getSearchMood(this.id)" id="search by date ">search by date</button> -->
+</div>
+<div id="deletAll"></div>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>PRICE</th>
+        <th>taxes</th>
+        <th>ADD</th>
+        <th>DISCOUNT</th>
+        <th>TOTAL</th>
+        <th>DATE</th>
+        <th>category</th>
+        <th>UPDATE</th>
+        <th>DELETE</th>
+    </tr>
+    <tbody id="tbody">
+      
+       
+    </tbody>
+</table>
+</div>
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
+<!-- الصلاحيه -->
+<!-- البحث بالصلاحيه -->
